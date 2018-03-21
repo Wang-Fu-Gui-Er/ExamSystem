@@ -1,0 +1,203 @@
+.col-lg-12 ul li {
+    margin-bottom: 15px;
+    text-align: center;
+    /* margin: 0 auto; */
+}
+
+.col-lg-12 #login-form li:first-child {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 800;
+    position: relative;
+}
+
+.col-lg-12 li:nth-child(2) {
+    margin-bottom: 0px;
+    font-size: 16px;
+}
+
+.col-lg-12 ul li span {
+    width: 25%;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.col-lg-12 ul .add {
+    /* display: block; */
+    border: 1px solid #ccc;
+    display: flex;
+    /* max-height: 1; */
+}
+
+.col-lg-12 ul .add span {
+    float: none;
+}
+
+.col-lg-12 ul .add span:nth-of-type(1) {
+    width: 20%;
+}
+
+.col-lg-12 ul .add span:nth-of-type(2) {
+    width: 70%;
+}
+
+.col-lg-12 ul .add span:nth-of-type(3) {
+    width: 10%;
+}
+
+.wrapper {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.small {
+    width: 50%;
+    margin-left: 25%;
+}
+
+.hidden {
+    display: none;
+}
+
+#register-form .selection {
+    margin-bottom: 50px;
+}
+
+#register-form .selection span {
+    width: 25%;
+    float: left;
+}
+
+.head {
+    font-size: 16px;
+}
+
+.btn {
+    margin: 0 80px;
+}
+
+#custom-search-input {
+    margin: 0;
+    /* margin-top: 10px; */
+    padding: 0;
+    position: relative;
+    font-weight: normal;
+    right: 0;
+    top: -3rem;
+}
+
+.input-group {
+    position: absolute;
+    right: 0;
+}
+
+#custom-search-input .search-query {
+    /* position: absolute; */
+    padding-right: 3px;
+    padding-right: 4px \9;
+    padding-left: 3px;
+    padding-left: 4px \9;
+    /* IE7-8 doesn't have border-radius, so don't indent the padding */
+    margin-bottom: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    z-index: 1;
+    height: 35px;
+}
+
+.input-group-btn {
+    position: absolute;
+    right: -1rem;
+    top: .5rem;
+}
+
+#custom-search-input button {
+    border: 0;
+    background: none;
+    /** belows styles are working good */
+    padding: 2px 5px;
+    margin-top: 2px;
+    /* position: relative; */
+    /* left: -28px; */
+    /* position: absolute;
+    right: 0px;
+    top: 0px; */
+    /* IE7-8 doesn't have border-radius, so don't indent the padding */
+    margin-bottom: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    outline: none;
+    color: #D9230F;
+}
+
+.search-query:focus+button {
+    z-index: 3;
+}
+
+.form-horizontal {
+    /* margin: 0 auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-horizontal .form-group {
+    width: 80%;
+    font-size: 16px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.form-horizontal .form-group label {
+    /* padding-bottom: 6px; */
+}
+
+.form-horizontal .control-label {
+    padding-top: 4px;
+}
+
+.form-horizontal .form-group input {
+    height: 3rem;
+    /* margin-left: 1px; */
+}
+
+.form-group .btn {
+    margin: 0;
+    margin-left: 23px;
+}
+
+.center {
+    /* margin: 0 auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#visit-form ul li:first-child {
+    font-weight: 800;
+}
+
+#visit-form ul li {
+    font-size: 16px;
+}
+
+
+/* #visit-form .list-unstyled li span:first-child {
+    width: 5%;
+}
+
+#visit-form .list-unstyled li span:nth-child(2) {
+    width: 20%;
+}
+
+#visit-form .list-unstyled li span:nth-child(3) {
+    width: 67%;
+}
+
+#visit-form .list-unstyled li span:nth-child(4) {
+    width: 8%;
+} */

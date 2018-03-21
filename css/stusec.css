@@ -1,0 +1,75 @@
+.col-lg-12 ul li {
+    margin-bottom: 15px;
+    text-align: center;
+    /* margin: 0 auto; */
+}
+
+.col-lg-12 #login-form li:first-child {
+    margin-bottom: 0px;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.col-lg-12 li:nth-child(2) {
+    margin-bottom: 0px;
+    font-size: 16px;
+}
+
+.col-lg-12 .left li span {
+    width: 50%;
+    float: left;
+}
+
+.col-lg-12 .left .add {
+    /* display: block; */
+    border: 1px solid #ccc;
+    display: flex;
+    /* max-height: 1; */
+}
+
+.col-lg-12 .left .add span {
+    float: none;
+}
+
+.col-lg-12 ul .add span:nth-of-type(1) {
+    width: 30%;
+}
+
+.col-lg-12 ul .add span:nth-of-type(2) {
+    width: 40%;
+}
+
+.col-lg-12 ul .add span:nth-of-type(3) {
+    width: 30%;
+}
+
+.wrapper {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.hidden {
+    display: none;
+}
+
+#register-form .selection {
+    margin-bottom: 50px;
+}
+
+.head {
+    font-size: 16px;
+}
+
+.btn {
+    margin: 0 80px;
+}
+
+.col-lg-12 #register-form #selection {
+    display: flex;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.col-lg-12 #register-form #selection span {
+    flex: 1;
+}

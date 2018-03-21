@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/teasec.css">
+    <style>
+        #visit-form .list-unstyled li span {
+            width: 25%;
+            overflow: hidden;
+            height: 2.6rem;
+        }
+        
+        .pagination {
+            margin: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 wrapper ">
+                <div class="panel panel-login">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-6 col-md-4">
+                                <a href="#" class="active" id="login-form-link">学生管理</a>
+                            </div>
+                            <div class="col-xs-6 col-md-4">
+                                <a href="#" id="register-form-link">题目录入</a>
+                            </div>
+                            <div class="col-xs-6 col-md-4">
+                                <a href="#" id="visit-form-link">题目浏览</a>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <ul class="list-unstyled first" id="login-form">
+                                    <li class="form-group">学生管理
+                                        <div>
+                                            <div id="custom-search-input">
+                                                <div class="input-group ">
+                                                    <input type="text" class="search-query form-control" id="search" placeholder="Search" />
+                                                    <span class="input-group-btn">
+                                                        <button class="btn btn-danger" type="button">
+                                                        <span class=" glyphicon glyphicon-search"></span>
+                                                    </button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="insertP"><span>学号</span><span>姓名</span><span>最后登陆时间</span><span>总分</span></li>
+                                    <!-- <li><span>1504010619</span><span>孙超</span><span>2017 06 19</span><span>100</span></li>
+                                    <li><span>1504010619</span><span>孙超</span><span>2017 06 19</span><span>100</span></li>
+                                    <li><span>1504010619</span><span>孙超</span><span>2017 06 19</span><span>100</span></li> -->
+                                </ul>
+                                <ul id="register-form" class="list-unstyled" style="display:none;">
+                                    <!-- <li class="head">录入题目</li> -->
+                                    <form class="form-horizontal" method="post" action="php/addQuestion.php">
+                                        <div class="form-group">
+                                            <label for="inputEmail3" class="col-sm-3 control-label">题目</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" id="inputEmail3" name="ques">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputEmail3" class="col-sm-3 control-label">正确选项</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" id="inputEmail3" name="cor" placeholder="请输入大写的正确答案">
+                                            </div>
+                                        </div>
+                                        <input type="text" style="display:none" name="count" id="count">
+                                        <div class="form-group A">
+                                            <label for="inputPassword3" class="col-sm-3 control-label">A</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" name="1">
+                                            </div>
+                                        </div>
+                                        <div class="form-group B">
+                                            <label for="inputPassword3" class="col-sm-3 control-label">B</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" name="2">
+                                            </div>
+                                        </div>
+                                        <div class="form-group center">
+                                            <!-- <div class=""> -->
+                                            <button type="button" class="btn btn-success col-sm-3 addItem">再加一项</button>
+                                            <button type="button" class="btn btn-danger col-sm-3 subItem">减一项</button>
+                                            <button type="submit" class="btn btn-info col-sm-3">提交</button>
+                                            <!-- </div> -->
+                                        </div>
+                                    </form>
+                                </ul>
+                                <div id="visit-form" style="display:none;">
+                                    <ul class="list-unstyled front">
+                                        <li>
+                                            <span>题号</span>
+                                            <span>题干</span>
+                                            <span>选项</span>
+                                            <span>正确答案</span>
+                                        </li>
+                                        <li>
+                                            <span>A:aaa</span>
+                                            <span>A:aaa</span>
+                                            <span>A:aaa</span>
+                                            <span>A:aaa</span>
+                                        </li>
+                                        <li>
+                                            <span>A:aaa</span>
+                                            <span>A:aaa</span>
+                                            <span>A:aaa</span>
+                                            <span>A:aaa</span>
+                                        </li>
+                                        <li>
+                                            <span>A:aaa</span>
+                                            <span>A:aaa</span>
+                                            <span>A:aaa</span>
+                                            <span>A:aaa</span>
+                                        </li>
+                                        <li>
+                                            <span>A:aaa</span>
+                                            <span>A:aaa</span>
+                                            <span>A:aaa</span>
+                                            <span>A:aaa</span>
+                                        </li>
+                                        <li>
+                                            <span>A:aaa</span>
+                                            <span>A:aaa</span>
+                                            <span>A:aaa</span>
+                                            <span>A:aaa</span>
+                                        </li>
+                                        <li>
+                                            <span>A:aaa</span>
+                                            <span>A:aaa</span>
+                                            <span>A:aaa</span>
+                                            <span>A:aaa</span>
+                                        </li>
+                                    </ul>
+                                    <div class="" style="text-align:center">
+                                        <ul class="pagination">
+                                            <li>
+                                                <a href="#" aria-label="Previous">
+                                                    &laquo;
+                                                </a>
+                                            </li>
+                                            <li><a href="#">1</a></li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li><a href="#">4</a></li>
+                                            <li><a href="#">5</a></li>
+                                            <li>
+                                                <a href="#" aria-label="Next">
+                                                    &raquo;
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="js/teasec.js"></script>
+    <script src="js/teachFirst.js"></script>
+    <script src="js/teachSecond.js"></script>
+    <script src="js/teachThird.js"></script>
+    <script>
+        $('#search').value = '213';
+        console.log($('#search').value);
+
+        var on = document.getElementById('visit-form-link');
+        on.onclick = function() {
+            var subject;
+            var docCookie = document.cookie.split(';');
+            var length, quot, arr;
+            console.log(docCookie);
+            docCookie.forEach(function(item) {
+                var num = item.split('=');
+                console.log(num);
+                if (num[0] == ' subject') {
+                    subject = num[1];
+                }
+                // console.log(stuid);
+            })
+
+            console.log(subject);
+            $.get('php/coueseController.php', {
+                'subject': subject
+            }, function(data) {
+                data = JSON.parse(data);
+                console.log(data);
+
+                // var newArr = arr.filter(item => item[0] == id);
+
+                var id;
+                var page = document.getElementsByClassName('pagination')[0];
+
+                var content = `<li><a href="#" aria-label="Previous" onclick="move('<')">&laquo;</a></li>`;
+
+
+                var obj = new Array();
+                data.forEach(function(item) {
+                    obj.push(item[0]);
+                })
+                obj = [...new Set(obj)].sort((prev, next) => prev[3] - next[3]);
+
+                length = obj.length;
+                arr = new Array();
+                quot = parseInt(length / 5);
+                while (obj != 0) {
+                    var c = obj.shift();
+                    var some = data.filter(item => item[0] == c);
+                    arr.push(some);
+                }
+                console.log(arr);
+                console.log(length / 5);
+                console.log(quot);
+
+                var id = 1;
+
+                for (var i = 1; i <= quot + 1; i++) {
+                    if (id == 1 && i == 1) {
+                        content += `<li class="active" id="${i}"><a href="#"  onclick="move(${i})">${i}</a></li>`;
+                    } else {
+                        content += `<li id="${i}"><a href="#" onclick="move(${i})">${i}</a></li>`;
+                    }
+                }
+                content += `<li><a href="#" aria-label="Next" onclick="move('>')">&raquo;</a></li>`;
+                page.innerHTML = content;
+
+                re(1);
+
+            })
+
+            function toAL(from) {
+                // console.log(from);
+                var numItem = 'a'.charCodeAt(0) + parseInt(from);
+                var charItem = String.fromCharCode(--numItem).toUpperCase();
+                return charItem;
+            }
+
+            function re(id) {
+                id = parseInt(id);
+                console.log(id);
+                var reNum = quot;
+                var frontCon = `<li><span>题号</span><span>题干</span><span>选项</span><span>正确答案</span></li>`;
+                var begin = id != 1 ? ((id - 1) * 5) : 0;
+                var rema = id != 1 ? (id == ++reNum ? ((length - 1) % 5 + begin) : (begin + 4)) : ((length > 5) ? 4 : (length - 1));
+                // console.log(begin + '' + rema);
+                var front = document.getElementsByClassName('front')[0];
+                console.log(arr);
+                for (var i = begin; i <= rema; i++) {
+                    frontCon += `<li><span>${arr[i][0][0]}</span><span>${arr[i][0][1]}</span><span>`;
+                    var sel = "";
+                    arr[i].forEach(function(item) {
+                        sel += `     ${toAL(item[3])}.${item[4]}     `;
+                    })
+                    frontCon += `${sel}</span><span>${toAL(arr[i][0][2])}</span></li>`;
+                    console.log(sel);
+
+                }
+                front.innerHTML = frontCon;
+            }
+
+            function move(from) {
+                var pageNum = quot;
+                id = $('.active')[1].id;
+                if (from == '<') {
+                    // console.log(typeof($('.active')[1].id));
+                    if ($('.active')[1].id != '1') {
+                        var fromId = $('.active')[1].id;
+                        id = --fromId;
+                        $($('.active')[1]).removeClass('active').prev().addClass('active');
+                    }
+                } else if (from == '>') {
+                    console.log(22222)
+                    console.log(quot);
+                    if ($('.active')[1].id != ++pageNum) {
+                        // console.log
+                        var fromId = $('.active')[1].id;
+                        id = ++fromId;
+                        $($('.active')[1]).removeClass('active').next().addClass('active');
+                    }
+                } else {
+                    console.log($('.active')[1]);
+                    $($('.active')[1]).removeClass('active');
+                    $(`#${from}`).addClass('active');
+                    id = from;
+                }
+                re(id);
+            }
+        }
+    </script>
+</body>
+
+</html>
